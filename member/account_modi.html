@@ -1,0 +1,137 @@
+@@include('../inc/head.html')
+@@include('../inc/header.html')
+<!-- container -->
+<section class="container" id="container">
+	<div class="pagetitle-wrap ">
+		<h1 class="title-style1 ">거래처 정보 수정</h1>
+	</div>
+	<div class="contents">
+		<div class="contents-title">	
+			<h2 class="title-style2">거래처 정보 수정 안내</h2>
+			<p class="text-style1">아래 사항을 빠짐없이 입력하여 주시기 바랍니다.</p>
+		</div>
+		
+			<table class="table table-type3">	  
+				<caption><span class="offscreen">거래처 정보 등록을 위한 사업자번호, 사업장명, 비밀번호, 대표자명, 전화번호, 팩스번호, 주소, 담당자명, 담당자 연락처, 담당자 e-mail을 입력 하는 표 입니다.</span></caption> 	  
+				<colgroup>	    
+					<col style="width:200px"/>	    
+					<col style=""/>	  
+				</colgroup>	 
+				<thead></thead> 
+				<tbody>	     
+					<tr>	         
+						<th>
+							<label for="buisnessNum">사업자 번호</label>
+						</th>	      
+						<td>
+							<input type="text" id="buisnessNum" maxlength="10" title="사업자 번호입력" value="111-11-11111"/>
+							<button type="button" class="btn">중복체크</button>
+							<p class="info-text"><span>*</span>###-##-##### 형태로 입력</p>
+						</td>	 	    
+					</tr>  
+					<tr>	         
+						<th>
+							<label for="buisnessName">사업장명</label>
+						</th>	      
+						<td>
+							<input type="text" id="buisnessName" title="사업장명입력"  value="인하대병원"/>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="password">비밀번호</label>
+						</th>	      
+						<td>
+							<input type="password" id="password" maxlength="20" title="비밀번호입력"  value="비밀번호를 입력하세요"/>
+							<p class="info-text"><span>*</span>영문, 숫자, 특수문자 모두 포함 10-20 자리 </p>
+						</td>	 	    
+					</tr>    
+					<!-- <tr>	         
+						<th>
+							<label for="passCheck">비밀번호 확인</label>
+						</th>	      
+						<td>
+							<input type="password" id="passCheck" maxlength="20" title="비밀번호입력"/>
+							<p class="info-text"><span>*</span>위에서 설정한 비밀번호와 동일하게 입력해주세요</p>
+						</td>	 	    
+					</tr>     -->
+					<tr>	         
+						<th>
+							<label for="name">대표자명</label>
+						</th>	      
+						<td>
+							<input type="text" id="name" title="대표자명 입력"  value="홍길동"/>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for="ph01">전화번호</label>
+						</th>	      
+						<td>
+							<div class="input-num">
+								<input type="text" id="ph01" maxlength="3" title="전화번호 앞번호 입력" class="phoneNum" value="02"/><span class="input-text">-</span>	
+								<label><input type="text" id="ph02" maxlength="4" title="전화번호 중간번호 입력"  class="phoneNum" value="111"/></label><span class="input-text">-</span>
+								<label><input type="text" id="ph03" maxlength="4" title="전화번호 뒷번호 입력"  class="phoneNum" value="1111"/></label>
+							</div>
+						</td>	 	    
+					</tr>
+					<tr>	         
+						<th>
+							<label for="fax01">팩스번호</label>
+						</th>	      
+						<td>
+							<div class="input-num">
+								<input type="text" id="fax01" maxlength="3" title="팩스 앞번호 입력" value="010" class="phoneNum" value="02"/><span class="input-text">-</span>	
+								<label><input type="text" id="fax02" maxlength="4" title="팩스 중간번호 입력" value="1234"  class="phoneNum"  value="111"/></label><span class="input-text">-</span>
+								<label><input type="text" id="fax03" maxlength="4" title="팩스 뒷번호 입력" value="1234" class="phoneNum" value="1111"/></label>
+							</div>
+						</td>	 	    
+					</tr>    
+					<tr>	         
+						<th>
+							<label for=zip>주소</label>
+						</th>	      
+						<td>
+							<div class="input-add">
+								<input type="text" id="zip" maxlength="5" title="우편번호 입력" value="우편번호"  disabled value="11111"/>
+								<button type="button" class="btn zip">우편번호 찾기</button><br/>
+								<label><input type="text" id="add01" maxlength="50" title="기본주소 입력" class="marT10" disabled value="서울시 서울구 서울동"/></label>
+								<label><input type="text" id="add02" maxlength="50" title="상세주소 입력" class="marT10 marL5" value="서울로1번길 11"/></label>
+							</div>
+						</td>	 	    
+					</tr> 
+					<tr>	         
+						<th>
+							<label for="managerName">담당자명</label>
+						</th>	      
+						<td>
+							<input type="text" id="managerName" title="담당자명 입력"  value="홍길동"/>
+						</td>	 	    
+					</tr>
+					<tr>	         
+						<th>
+							<label for="managerHp">담당자 연락처</label>
+						</th>	      
+						<td>
+							<input type="text" id="managerHp" title="담당자 연락처 입력"  value="11-111-1111"/>
+						</td>	 	    
+					</tr>
+					<tr>	         
+						<th>
+							<label for="email">담당자 E-mail</label>
+						</th>	      
+						<td>
+							<input type="text" id="email" title="담당자 E-mail 입력"  placeholder="abcd@ab.com"/>
+						</td>	 	    
+					</tr>      
+				</tbody>
+			</table>
+			<div class="btn-wrap marT50">
+				<button type="button" class="btn btn-l color02">수정 완료</button>
+				<button type="button" class="btn btn-l color03 ">취소</button>	
+			</div>
+			
+	</div>
+</section>
+<!-- //container -->
+@@include('../inc/footer.html')
