@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* ----- 공통 layout ----- */
+/* skip navi */
+.skip{position:relative;z-index:99;}
+.skip h2{display: block;overflow: hidden;position: absolute;width: 0px;height: 0px;font-size: 1px;line-height: 0;text-indent: -999em;white-space: nowrap;}
+.skip a{position: absolute;top: -100px;left: -999px;display:block;height:50px;padding:0 20px;line-height:50px;font-size:16px;text-align:center;background: #31313b;color: white;}
+.skip a:focus{top:0;left:0;}
+
+
+/* hidding */
+.offscreen{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+
+/* 공통 너비 layout */
+.common-layout{position:relative;width:1180px;margin:0 auto}
+.container{position:relative;}
+.common-layout:after,
+.container:after{content:'';display:block;clear:both;}
+
+/* header */
+.top-wrap{text-align: center;height:35px; background: #0770bb;}
+.top-wrap .top-left{position:absolute;left:0;top:0px;}
+.top-wrap .top-right{position:absolute;right:0;top:0px;}
+
+/* header-top- */
+.link-unit{line-height:35px;font-family: 'NotoKrR',sans-serif;font-size:14px;letter-spacing:-0.05em;}
+.link-unit:after{content:'';display:block;clear:both;}
+.link-unit li{position:relative;float:left;vertical-align:top;}
+.link-unit li a{color:#fff;vertical-align: top; padding:0 30px;  display: block;  border-left: 1px solid #398dc9;height:35px;  }
+.link-unit li:last-child{ border-right: 1px solid #398dc9;}
+
+.link-unit2{line-height:35px;vertical-align: top;}
+.link-unit2:after{content:'';display:block;clear:both;}
+.link-unit2 li{position:relative;float:left;vertical-align:top;padding:0 15px;}
+.link-unit2 li:last-child{padding-right:0;}
+.link-unit2 li:after{content: '';display: inline-block;width: 1px;height: 10px;background: #fff;position: absolute;top: 16px;right:0px;}
+.link-unit2 li:last-child:after{content: '';display:none;}
+.link-unit2 li a{font-family: 'NotoKrM',sans-serif;font-size:13px;color:#fff;letter-spacing:-0.05em;height:35px;}
+
+
+/* header-gnb */
+.header{position:relative;}
+.nav-wrap{position:relative;height:90px;border-bottom:1px solid #eeeeee; background: #fff; }
+.nav-wrap .common-layou:after{content:'';display:block;clear:both;}
+.gnb-wrap{display:block; position: absolute;top: 0; right: 0;}
+.nav-wrap h1{padding-top: 24px; width:350px; }
+.nav-wrap h1 a{font-size: 18px; color:#0082b6; font-family: 'NotoKrM',sans-serif; font-weight: normal; display: block; padding-left: 180px; height: 43px;position: relative;padding-top: 11px;}
+.nav-wrap h1 a:before{content: '';display: block;width: 1px;height: 20px;background: #0082b6;position: absolute;top: 11px;left:163px;}
+.nav-wrap h1 a:after{content: '';display: block;width: 145px;height: 43px;background:url(../img/icon_components.png) left top no-repeat;position: absolute;top: 0px;left:0px;}
+.gnb li{float:left;color:#000;font-size:18px;font-family: 'NotoKrM',sans-serif;text-align: center;margin-left:85px;}
+.gnb li:first-child{margin-left:0;}
+.gnb li a{display:block;line-height:90px;height:90px;position:relative}
+.gnb li a:hover,.gnb li a.active{color:#0770bb}
+.gnb li a:hover:after,.gnb li a.active:after{content:'';display:inline-block;position:absolute;left:0;bottom:0;right:0;height:4px;background: #0770bb}
+
+
+/* container */
+.container{}
+.pagetitle-wrap{text-align: center;width:1180px;margin:0 auto 60px; padding-top:100px;}
+.contents{ position: relative;width:1180px;margin:0 auto 100px}
+
+/* footer */
+.footer{background:#3d4044; position: relative;}
+.footer .top-btn{width: 60px; height:60px; background: url(../img/icon_components.png) 0 -100px no-repeat rgba( 61, 64, 68, 0.6 ); border-radius: 60px; position: absolute;top: -110px; right: 0; }
+.quicklink-wrap{background:#374257;width: 100%; }
+.quicklink{color:#fff;letter-spacing: -0.05em;border-left:1px solid #5f6879}
+.quicklink:after{content:'';display:block;clear:both;}
+.quicklink li{width:194px;border-right:1px solid #5f6879; display:inline-block;}
+.quicklink li a{display:block;height:50px;line-height:50px;position:relative; width: 196px; text-align: center;}
+
+
+/* copyright */
+.copyright-wrap .common-layout{padding-top:30px;padding-bottom:42px;color:#aaa;}
+.copyright-btn{margin-bottom: 15px;}
+.copyright-btn button{font-family: 'NotoKrR',sans-serif; font-size: 14px; color:#fff;position: relative;padding:0  15px;}
+.copyright-btn button:first-child{padding-left: 0;}
+.copyright-btn button:after{content: '';display: inline-block;width: 1px;height: 11px;background: #fff;position: absolute;top: 5px;right:0px;}
+.copyright-btn button:last-child:after{content: '';display:none;}
+.copyright-info{float:left;line-height:24px; font-size: 14px; color:#aaa;}
+.copyright-info .copyright{text-transform: uppercase;}
+.footer .footer-logo{width: 131px; height:39px; background: url(../img/icon_components.png) 0 -50px no-repeat; position: absolute; right: 0; top:50px; }
+
+
+/* ----- 공통 guide ----- */
+
+
+
+/* 기본 CSS */
+.textR{text-align:right !important;}
+.textC{text-align:center !important;}
+.textL{text-align:left !important;}
+
+.floatL{float:left;}
+.floatR{float:right;}
+
+.marT7{margin-top: 7px !important}
+.marT10{margin-top: 10px !important}
+.marT15{margin-top: 15px !important}
+.marT20{margin-top: 20px !important}
+.marT30{margin-top: 30px !important}
+.marT40{margin-top: 40px !important}
+.marT50{margin-top: 50px !important}
+.marT60{margin-top: 60px !important}
+.marT80{margin-top: 80px !important}
+.marT100{margin-top: 100px !important}
+.marB15{margin-bottom: 15px !important}
+.marL5{margin-left: 5px !important}
+.marL10{margin-left: 10px !important}
+.marL20{margin-left: 20px !important}
