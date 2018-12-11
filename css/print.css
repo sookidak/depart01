@@ -1,0 +1,12 @@
+h1{ font-size: 28px; text-align: center; margin:20px 0 30px; font-family: 'NotoKrM',sans-serif; }
+/* hidding */
+.offscreen{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden;}
+table {width: 100%; margin: 0 auto;border-collapse:collapse !important; border: 1px solid #777; }
+table th{font-size: 11px; font-family: 'NotoKrM',sans-serif;  text-align: center;  color: #000; padding:10px 0 ;border-bottom: 1px solid #777;border-left: 1px solid #ccc; background: #f8f8f8 }
+
+table td{font-size: 10px;color: #333; padding:6px 4px;border-left: 1px solid #ccc; border-bottom: 1px solid #aaa; }
+table td:first-child, table th:first-child{border-left: 1px solid #777}
+table td:last-child, table th:last-child{border-right: 1px solid #777}
+.textR{text-align:right !important;}
+.textC{text-align:center !important;}
+.textL{text-align:left !important;}
