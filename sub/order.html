@@ -78,7 +78,7 @@
 								</tr>
 							</tbody>	
 						</table>
-					<button type="button" class="btn print">프린트 출력</button>
+						<button type="button" class="btn print">프린트 출력</button>
 					</div>
 					<!-- //Board_List-->
 					<!-- paging Box-->
@@ -216,15 +216,15 @@
 							<caption><span class="offscreen">검색 결과에 따른 발주내역 표 입니다.</span></caption>	  
 							<colgroup>	    
 								<col style="width:62px"/>						
-								<col style="width:102px"/>	   						
-								<col style="width:108px"/> 						
+								<col style="width:130px"/>	   						
+								<col style="width:112px"/> 						
 								<col style="width:112px"/> 						
 								<col style="width:"/> 						
-								<col style="width:102px"/> 						
-								<col style="width:94px"/> 						
-								<col style="width:108px"/> 						
-								<col style="width:120px"/> 							
-								<col style="width:98px"/> 
+								<col style="width:98px"/> 						
+								<col style="width:90px"/> 						
+								<col style="width:130px"/> 						
+								<col style="width:130px"/> 							
+								<col style="width:110px"/> 
 							</colgroup>	  
 							<thead>
 								<tr>
@@ -243,19 +243,19 @@
 							<tbody>
 								<tr>
 									<td class="textC">1</td>
-									<td>　</td>
+									<td><a href="" class="active-type1" title="새창으로 열림">PO1807130014</a>　</td>
 									<td>2018.12.12</td>
 									<td>2018.12.12</td>
-									<td>　</td>
-									<td>　</td>
-									<td>　</td>
-									<td>2018.12.12</td>
-									<td>　</td>
-									<td>　</td>
+									<td class="textL">케어캠프94742　</td>
+									<td>정기</td>
+									<td>박정환</td>
+									<td><label><input type="text" id="" value="2018-09-11" title="확인일을 입력하세요" /></label></td>
+									<td><label><input type="text" id="" value="양길자" title="확인자를 입력하세요"/></label></td>
+									<td><button type="button" class="btn">확인</button></td>
 								</tr>
 							</tbody>	
 						</table>
-					<button type="button" class="btn print">프린트 출력</button>
+						<button type="button" class="btn print">프린트 출력</button>
 					</div>
 					<!-- //Board_List-->	
 					<!-- paging Box-->
@@ -367,14 +367,204 @@
 					<!-- //paging Box-->
 				</div>		
 			</div>
-			<div id="tap03-panel" tabindex="0" role="tabpanel" aria-labelledby="tab03" class="tabpanel ">
+			<div id="tap03-panel" tabindex="0" role="tabpanel" aria-labelledby="tab03" class="tabpanel">
 				<div class="contents-title">	
-					<h2 class="title-style2">사후정산 내역 조회</h2>
-					<p class="text-style1"></p>
+					<h2 class="title-style2">사후정산 내역 조회</h2>					
+					<p class="text-style1">사후정산 내역을 조회할 수 있습니다.<br/>검색 조건을 모두 입력·선택 후 검색 버튼을 누르세요.</p>
 				</div>	
 				<div class="contents-wrap">	
-					검색 조건 확인 후 업데이트 필요
+					<!-- board search box -->
+					<div class="search-box">
+						<label for="check" class="block"><p>거래처로 검색</p>
+							<div class="checkbox">
+								<input type="checkbox" id="check" aria-checked="false" >
+								<label for="check" ></label>
+							</div>
+						</label>
+						<label for="buisnessNum2"><p>사업자 번호</p>
+							<input type="text" id="buisnessNum2" maxlength="10" title="사업자 번호입력" placeholder="####-##-##### 형태로 입력하시기 바랍니다" class="sizeM" />
+						</label>
+						<label for="month"><p>마감월</p>
+							<input type="text" id="month" maxlength="6" title="마감월 입력" placeholder="YYYYMM 형태로 입력하시기 바랍니다" class="sizeM" />
+						</label>
+						<label for="manager"><p>부서담당자</p>
+							<div class="select sizeS">							
+								<label for="manager">선택지1</label> 
+								<select id="manager" class="select " aria-haspopup="true" aria-controls="select-menu" >    
+									<option lang="ko" value="1" role="menuitem">선택지1</option>	    
+									<option lang="ko" value="2" role="menuitem">선택지2</option>	  
+								</select>
+							</div>
+						</label>
+						<button type="button" class="btn color01">검색</button>
+						<!-- 초기화 버튼 활성시  class default 제거 -->
+						<button type="button" class="btn color02 default">초기화</button>
+					</div>		
+					<!-- //board search box -->
+					<!-- Board_List-->		
+					<div class="board-list-wrap">
+						<table class="table table-type1">	  
+							<caption><span class="offscreen">검색 결과에 따른 발주내역 표 입니다.</span></caption>	  
+							<colgroup>	    
+								<col style="width:55px"/>						
+								<col style="width:90px"/>	   						
+								<col style="width:"/> 						
+								<col style="width:70px"/> 						
+								<col style="width:70px"/> 						
+								<col style="width:90px"/> 						
+								<col style="width:70px"/> 						
+								<col style="width:90px"/> 						
+								<col style="width:70px"/> 							
+								<col style="width:90px"/> 							
+								<col style="width:70px"/> 							
+								<col style="width:90px"/> 							
+								<col style="width:120px"/> 
+							</colgroup>	  
+							<thead>
+								<tr>
+									<th>No</th>
+									<th>품목코드</th>
+									<th>품목명</th>
+									<th>단위</th>
+									<th>단가</th>
+									<th>전월재고</th>
+									<th>입고량</th>
+									<th>입고액</th>
+									<th>소모량</th>
+									<th>소모금액</th>
+									<th>재고량</th>
+									<th>재고금액</th>
+									<th>거래처</th>
+								</tr>					
+							</thead>	  
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>BCC217</td>
+									<td>Cryo Tube 2ML, #8536R 130587</td>
+									<td class="textR">EA</td>
+									<td class="textR">293</td>
+									<td class="textR">20</td>
+									<td class="textR">30</td>
+									<td class="textR">100,000</td>
+									<td class="textR">10</td>
+									<td class="textR">50,000</td>
+									<td class="textR">40</td>
+									<td class="textR">100,000</td>
+									<td>거래처</th>
+								</tr>
+							</tbody>	
+						</table>
+						<button type="button" class="btn print">프린트 출력</button>
+					</div>
+					<!-- //Board_List-->	
+					<!-- paging Box-->
+					<div class="pager" role="navigation" aria-label="페이지 선택 영역">	 
+						<div class="page"> 
+							<ul>							
+								<li>	        
+									<a href="#first" class="jump first">	 
+										<span>처음 페이지 보기</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#prev" class="jump prev">	          
+										<span>이전 10 페이지 보기</span>	        
+									</a>
+								</li>	
+								<li class="active"> 
+									<span>	
+										<span class="offscreen">현재 페이지</span>  
+										1
+									</span>
+								</li>
+								<li>  
+									<a href="#2">
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	
+											<span>2</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>	
+									<a href="#3">	            
+										<span>	            
+											<span class="offscreen">  페이지 보기  </span>	            
+											<span>3 </span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#4">	          
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>4 </span>
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#5">	
+										<span>	            
+											<span class="offscreen">  페이지 보기</span>	 
+											<span>5</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#6">	          
+										<span>	            
+											<span class="offscreen">  페이지 보기</span>	            
+											<span>6</span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#7">	          
+										<span>
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>7</span>	
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#8">
+										<span>	            
+											<span class="offscreen">  페이지 보기 </span>
+											<span>8</span>	          
+										</span>	        
+									</a>								
+								</li>								
+								<li>	 
+									<a href="#9">	          
+										<span>	            
+											<span class="offscreen">  페이지 보기 </span>	            
+											<span>9</span>	          
+										</span>	        
+									</a>
+								</li>								
+								<li>	        
+									<a href="#10">	          
+										<span>	
+											<span class="offscreen">  페이지 보기  </span>	            
+											<span>10</span>	          
 
+										</span>	        
+									</a>								
+								</li>								
+								<li>	        
+									<a href="#next" class="jump next">	 
+										<span>다음 10 페이지 보기</span>	        
+									</a>								
+								</li>								
+								<li>
+									<a href="#last" class="jump last">	          
+										<span>마지막 페이지 보기</span>	        
+									</a>
+								</li>	    
+							</ul>	  
+						</div>	
+					</div>
+					<!-- //paging Box-->
 				</div>		
 			</div>
 			<div id="tap04-panel" tabindex="0" role="tabpanel" aria-labelledby="tab04" class="tabpanel ">
@@ -451,7 +641,7 @@
 								</tr>
 							</tbody>	
 						</table>
-					<button type="button" class="btn print">프린트 출력</button>
+						<button type="button" class="btn print">프린트 출력</button>
 					</div>
 					<!-- //Board_List-->
 					<!-- paging Box-->
@@ -622,7 +812,7 @@
 								</tr>
 							</tbody>	
 						</table>
-					<button type="button" class="btn print">프린트 출력</button>
+						<button type="button" class="btn print">프린트 출력</button>
 					</div>
 					<!-- //Board_List-->
 					<!-- paging Box-->

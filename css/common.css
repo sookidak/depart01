@@ -56,7 +56,7 @@
 
 
 /* container */
-.container{}
+.container.full{min-width: 1000px}
 .pagetitle-wrap{text-align: center; width: 100%; height: 210px; background: url(../img/title_bg_00.jpg) top center repeat-x;}
 .pagetitle-wrap.bg01{background-image: url(../img/title_bg_01.jpg); }
 .pagetitle-wrap.bg02{background-image: url(../img/title_bg_02.jpg);}
@@ -106,11 +106,11 @@
 .floatL{float:left !important;}
 .floatR{float:right !important;}
 
-.NotoKrL {font-family: 'NotoKrL',sans-serif ; font-weight: normal;}
-.NotoKrDL {font-family: 'NotoKrDL',sans-serif; font-weight: normal;}
-.NotoKrR {font-family: 'NotoKrR',sans-serif; font-weight: normal; }
-.NotoKrM {font-family: 'NotoKrM',sans-serif; font-weight: normal; }
-.NotoKrB {font-family: 'NotoKrB',sans-serif;  font-weight: normal;}
+.NotoKrL {font-family: 'NotoKrL',sans-serif !important; font-weight: normal;}
+.NotoKrDL {font-family: 'NotoKrDL',sans-serif !important; font-weight: normal;}
+.NotoKrR {font-family: 'NotoKrR',sans-serif !important; font-weight: normal; }
+.NotoKrM {font-family: 'NotoKrM',sans-serif !important; font-weight: normal; }
+.NotoKrB {font-family: 'NotoKrB',sans-serif !important;  font-weight: normal;}
 
 .marT7{margin-top: 7px !important}
 .marT10{margin-top: 10px !important}
@@ -140,6 +140,8 @@
 .btn.default{background: #757a85 !important; cursor: default;}
 .btn.print{position:absolute;bottom: -70px; left:0;}
 
+td .btn{min-width:70px;border-radius:2px; height: 40px; font-size: 14px}
+td input[type="text"]{width: 92px; padding:0 10px }
 
 /* button group */
 .btn-wrap{text-align:center; }
@@ -160,6 +162,11 @@
 .text-style5{font-family: 'NotoKrL'; font-size: 14px; color: #777;font-weight: normal; line-height: 20px}
 
 
+/* contbox */
+.etcbox{padding:30px;background:#f3f3f3;text-align: left;}
+.etcbox .etcbox-cont{line-height:20px;}
+.etcbox .etcbox-title1{position:relative;font-size:20px;margin-bottom:20px;font-family:'NotoKrM',sans-serif;}
+
 /* list-type */
 .list-type1{text-align:left;}
 .list-type1 > li{padding-left:10px;font-size:16px;position: relative;margin-bottom:7px;color:#333;}
@@ -167,6 +174,14 @@
 
 .list-type1 li ul{text-align:left;margin-top:7px;padding-bottom:1px;}
 .list-type1 li ul li{font-size:16px;position: relative;margin-bottom:6px;color:#777;}
+
+
+.list-type2{text-align:left;}
+.list-type2 li{padding-left:13px;position: relative;margin-bottom:7px;font-size:14px;color:#333;}
+.list-type2 li:before{content:'';display:inline-block;position:absolute;left:0;top:50%;margin-top:-2px;width:4px;height:4px;background:#aaa;}
+
+ol.list-type2 li{list-style-position: inside; padding-left: 0}
+ol.list-type2 li:before{content:'';display:none}
 
 
 /* link-type1 */
@@ -180,13 +195,16 @@
 .table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;} 
 .table th:first-child, .table td:first-child{ border-left: 0 }
 .table th.line{border-right: 1px solid #ddd;}
-.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px;}
+.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; word-break: keep-all;}
 .table td.line{border-left: 1px solid #eee !important;}
 
 /* table - table-type1 */
-.table.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee; letter-spacing: -1px }
+.table.table-type1 tbody th{  border-top: 0;border-bottom: 1px solid #eee; letter-spacing: -1px;  }
+.table.table-type1 thead th, .table.table-type1 tbody td{padding:0 10px }
 .table.table-type1 tbody th:first-child{ border-right: 1px solid #ddd; }
 .table.table-type1 thead tr:first-child th{border-top: 2px solid #bbb;}
+.table.table-type1 tbody td.acc{font-family: 'NotoKrR'; font-size: 15px; color: #333;font-weight: normal;}
+.table.table-type1 tbody td.acc2{font-family: 'NotoKrM'; font-size: 16px; color: #000;font-weight: normal;}
 
 /* table - table-type3 */
 .table-type3{border-top:2px solid #bbbbbb;  margin-top: 15px; }
@@ -220,7 +238,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .select label { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1;line-height:normal; border: 1px solid #ddd;  background: url(../img/icon_components_select_off.png) no-repeat right center #fff; height: 100%; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0 ;  vertical-align: middle; line-height:38px;} 
 .select select { width: 100%; height: 100%;  line-height: 24px;  font-family: inherit;  font-size: inherit; font-weight:inherit;  border: 0; padding:10px 20px; opacity: 0; filter:alpha(opacity=0);  -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .select.disabled label, .select.disabled:hover label, .select.disabled:focus label{ border-color:#eee; color: #777; background: #f8f8f8; }
-.select:hover label, .select:focus label{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center }
+.select:hover label, .select:focus label{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center #fff}
 
 .input-email, .input-num, .input-add, .input-rrn{text-align: left;} 
 .input-text{color: #333333; font-size: 16px; letter-spacing: 0; display: inline-block; margin:0 4px; }
@@ -231,6 +249,17 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .input-add .btn {height: 40px; border-radius: 0; vertical-align: middle; font-size: 14px;  font-weight: normal; min-width:88px; position: relative; left: -3px}
 .input-add .btn.zip{width:115px !important;}
 .input-rrn .rrn{width: 193px !important; }
+
+
+/* checkbox */
+.checkbox{position:relative;display: inline-block;vertical-align: middle;margin-right:10px;}
+.checkbox input[type=checkbox]{position:absolute;left:0;top:0;}
+.checkbox label{display:inline-block;position:relative;padding-left:35px;min-width:25px;min-height:25px;line-height:25px;color:#777;}
+.checkbox label:before{content:'';position:absolute;left:0;top:0;display:inline-block;width:25px;height:25px;background:url('../img/icon_component.png') -40px 0px;cursor:pointer;z-index:10;}
+.checkbox input[type=checkbox]:checked +label:before{background-position: -40px -40px;}
+.checkbox input[type=checkbox]:disabled +label:before{background-position: -40px -80px;}
+.checkbox input[type=checkbox]:disabled:checked +label:before{background-position: -40px -120px;}
+
 
 /* 검색박스 */
 .search-box{background: #f8f8f8;padding:30px; margin-bottom: 30px; color: #000 ; font-size: 0;letter-spacing: -5px}
@@ -245,7 +274,9 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .search-box > label{display: inline-block; position: relative;margin-right: 20px; }
 .search-box label span.bar{letter-spacing: -1px;display: inline-block; position: relative;top: -16px;color: #000 ; font-size: 16px; margin: 0 5px}
 .search-box .cal-btn:after{content: ""; display: block; width: 40px; height: 40px; position: absolute; right:0px; bottom: 0px; background:url(../img/icon_contents.png) no-repeat -80px top #000 ; z-index: 1}
-
+.search-box .block{display: inline-block; vertical-align: bottom; position: relative;top: -11px}
+.search-box .block p{display: inline-block;}
+.search-box .block .checkbox{position: relative;top: -5px; left: 15px;}
 
 
 
@@ -303,7 +334,7 @@ input[type=text]:focus, input[type=password]:focus{ outline: none; border: 1px s
 .tablist-type1 a.active{font-family:'NotoKrM',sans-serif;color:#333333; background: #fff}
 
 .tab-wrap .tabpanel, .tab-wrap .tabpanel-sub{display: none}
-.tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block;}
+.tab-wrap .tabpanel.active, .tab-wrap .tabpanel-sub.active{display: block; outline: none;}
 
 
 /* info-box */
