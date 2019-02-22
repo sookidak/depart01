@@ -67,7 +67,7 @@
 
 /* footer */
 .footer{background:#3d4044; position: relative;}
-.footer .top-btn{width: 60px; height:60px; background: url(../img/icon_header.png) 0 -100px no-repeat rgba( 61, 64, 68, 0.2 ); border-radius: 60px; position: absolute;top: -110px; right: 0; }
+.footer .top-btn{width: 60px; height:60px; background: url(../img/icon_header.png) 0 -100px no-repeat rgba( 61, 64, 68, 0.2 ); border-radius: 60px; position: absolute;top: -90px; right: 0; }
 .quicklink-wrap{background:#374257;width: 100%; }
 .quicklink{color:#fff;letter-spacing: -0.05em;border-left:1px solid #5f6879}
 .quicklink:after{content:'';display:block;clear:both;}
@@ -82,7 +82,7 @@
 .copyright-btn button:first-child{padding-left: 0;}
 .copyright-btn button:after{content: '';display: inline-block;width: 1px;height: 11px;background: #fff;position: absolute;top: 5px;right:0px;}
 .copyright-btn button:last-child:after{content: '';display:none;}
-.copyright-info{float:left;line-height:24px; font-size: 14px; color:#aaa;}
+.copyright-info{float:left;line-height: 25px; font-size: 14px; color:#aaa;}
 .copyright-info .copyright{text-transform: uppercase;}
 .footer .footer-logo{width: 131px; height:39px; background: url(../img/icon_header.png) 0 -50px no-repeat; position: absolute; right: 0; top:50px; }
 
@@ -155,7 +155,7 @@ td input[type="text"]{width: 92px; padding:0 10px }
 .title-style2{font-family: 'NotoKrM'; font-size: 40px; color: #000;font-weight: normal; margin-bottom: 30px;text-align: center; }
 .title-style3{font-family: 'NotoKrM'; font-size: 18px; color: #000;font-weight: normal; }
 .title-style4{font-family: 'NotoKrM'; font-size: 20px; color: #000;font-weight: normal; }
-.text-style1{font-family: 'NotoKrR'; font-size: 18px; color: #000;font-weight: normal;line-height: 24px; text-align: center; margin-bottom: 60px; letter-spacing: -1.5px}
+.text-style1{font-family: 'NotoKrR'; font-size: 18px; color: #000;font-weight: normal;line-height: 25px; text-align: center; margin-bottom: 60px; letter-spacing: -1.5px}
 .text-style2{font-family: 'NotoKrR'; font-size: 16px; color: #333;font-weight: normal;}
 .text-style3{font-family: 'NotoKrL'; font-size: 16px; color: #777;font-weight: normal;}
 .text-style4{font-family: 'NotoKrL'; font-size: 14px; color: #0770bb;font-weight: normal;}
@@ -195,7 +195,7 @@ ol.list-type2 li:before{content:'';display:none}
 .table th{font-size: 16px; font-family: 'NotoKrR'; font-weight: normal; color: #000000 ; padding: 0 20px ;text-align:center; background-color: #f6f6f6; height: 70px; border-right: 0; border-left: 1px solid #eee; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd;} 
 .table th:first-child, .table td:first-child{ border-left: 0 }
 .table th.line{border-right: 1px solid #ddd;}
-.table td{font-size: 14px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; word-break: keep-all;}
+.table td{font-size: 16px; font-family: 'NotoKrL'; text-align: center; font-weight: normal; color: #777777;  padding: 0 20px ; border-right: 0; border-left: 1px solid #eee; border-bottom: 1px solid #eee; border-top: 0; background-color:#fff;  height: 60px; word-break: keep-all;}
 .table td.line{border-left: 1px solid #eee !important;}
 
 /* table - table-type1 */
@@ -210,7 +210,7 @@ ol.list-type2 li:before{content:'';display:none}
 .table-type3{border-top:2px solid #bbbbbb;  margin-top: 15px; }
 .table-type3 th{width: 200px; border:1px solid #eeeeee;text-align: left;padding-left: 30px;border-right: 0; border-left: 0; background: #fff; height: 60px; }
 .table-type3 th .acc{color: #199da3; margin-left:2px; position: relative;top: 4px; }
-.table-type3 td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 0; line-height: 24px; font-size: 16px;}
+.table-type3 td{text-align: left; border-left: 0; border-right: 0; border-left: 0;padding: 10px 0; line-height: 25px; font-size: 16px;}
 .table-type3.height td{padding: 20px 0; }
 .table-type3 .info-text{ font-size: 14px; letter-spacing: -0.5px; margin-top: 8px; line-height: 14px; position: relative; padding-left: 8px; line-height: 16px; }
 .table-type3 .info-text span{display: inline-block; margin-right: 3px; position: absolute; top: 3px; left:0;}
@@ -237,7 +237,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 
 .select { position: relative; width: 200px; z-index: 1; height: 40px; font-size: 14px; font-weight:normal;  font-family: 'NotoKrL'; color: #777; display: inline-block;} 
 .select label { position: absolute; top: 0px; left: 0px; width: 100%; z-index: -1;line-height:normal; border: 1px solid #ddd;  background: url(../img/icon_components_select_off.png) no-repeat right center #fff; height: 100%; padding: 0 20px; -webkit-appearance: none; -moz-appearance: none;  appearance: none; text-align: left; padding-right:40px; border-radius: 0 ;  vertical-align: middle; line-height:38px;} 
-.select select { width: 100%; height: 100%;  line-height: 24px;  font-family: inherit;  font-size: inherit; font-weight:inherit;  border: 0; padding:10px 20px; opacity: 0; filter:alpha(opacity=0);  -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+.select select { width: 100%; height: 100%;  line-height: 25px;  font-family: inherit;  font-size: inherit; font-weight:inherit;  border: 0; padding:10px 20px; opacity: 0; filter:alpha(opacity=0);  -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 .select.disabled label, .select.disabled:hover label, .select.disabled:focus label{ border-color:#eee; color: #777; background: #f8f8f8; }
 .select:hover label, .select:focus label{ outline: none; border-color: #199da3;font-family: 'NotoKrR'; color: #000;background-position: right -40px; background:url(../img/icon_components_select_on.png) no-repeat right center #fff}
 
@@ -339,7 +339,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 
 
 /* info-box */
-.info-box > div{border: 3px solid #0770bb; width: 580px; height: 230px; display: inline-block; font-size: 16px; vertical-align: top; color: #777777; line-height: 24px; border-radius: 30px; position: relative;}
+.info-box > div{border: 3px solid #0770bb; width: 580px; height: 230px; display: inline-block; font-size: 16px; vertical-align: top; color: #777777; line-height: 25px; border-radius: 30px; position: relative;}
 .info-box > div.mint{border: 2px solid #199da3}
 .info-box > div:first-child{margin-right: 16px;}
 .info-box .title{color:#0770bb; font-size: 26px; font-family:'NotoKrM',sans-serif; font-weight: normal; position: absolute; top: 50%; left: 50px; transform: translateY(-50%)  ; }
@@ -387,7 +387,7 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 .delivery .botton .box:first-child{width: 380px; margin-left: 0px;  }
 .delivery .box .title-style4{margin-bottom: 30px}
 .delivery .list li{display: inline-block; margin-left: 17px;}
-.delivery .list li p{ background: #fff; border: 1px solid #eeeeee; font-size: 16px; color: #333; line-height: 24px; width: 220px; height: 85px; display: table-cell;vertical-align: middle; text-align: center;}
+.delivery .list li p{ background: #fff; border: 1px solid #eeeeee; font-size: 16px; color: #333; line-height: 25px; width: 220px; height: 85px; display: table-cell;vertical-align: middle; text-align: center;}
 .delivery .list li:first-child{ margin-left:0px;}
 .delivery .list-type1{line-height: 30px; margin-bottom: 25px;}
 
@@ -403,8 +403,8 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 .agree-text {color: #777; letter-spacing: -1px; word-break: keep-all;}
 .agree-text h2{font-size: 20px; color: #000; font-family: 'NotoKrM'; font-weight: normal; margin-bottom: 20px; margin-top: 50px}
 .agree-text h3{font-size: 16px; color: #333;font-family: 'NotoKrR'; font-weight: normal; margin: 20px 0 10px;}
-.agree-text p{ line-height: 24px; font-size: 16px; }
-.agree-text ul li{font-size: 16px; color: #777; line-height: 24px;position: relative; margin-bottom: 6px;}
+.agree-text p{ line-height: 25px; font-size: 16px; }
+.agree-text ul li{font-size: 16px; color: #777; line-height: 25px;position: relative; margin-bottom: 6px;}
 .agree-text ul li span{}
 .agree-text ul.type1 li{padding-left: 8px; }
 .agree-text ul.type1 li:after{content: ""; display: block; position: absolute; width: 4px; height: 1px; left: 0; top: 12px;  border-color: #777  }
