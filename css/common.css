@@ -107,7 +107,7 @@
 .floatR{float:right !important;}
 
 .NotoKrL {font-family: 'NotoKrL',sans-serif !important; font-weight: normal;}
-.NotoKrDL {font-family: 'NotoKrDL',sans-serif !important; font-weight: normal;}
+.NotoKrDL {font-family:  'NotoKrR',sans-serif !important; font-weight: normal;}
 .NotoKrR {font-family: 'NotoKrR',sans-serif !important; font-weight: normal; }
 .NotoKrM {font-family: 'NotoKrM',sans-serif !important; font-weight: normal; }
 .NotoKrB {font-family: 'NotoKrB',sans-serif !important;  font-weight: normal;}
@@ -150,7 +150,7 @@ td input[type="text"]{width: 92px; padding:0 10px }
 
 
 /* text */
-.title-style1{font-family: 'NotoKrDL'; font-size: 36px; color: #fff;font-weight: normal;padding-top: 88px;}
+.title-style1{font-family:  'NotoKrR'; font-size: 36px; color: #fff;font-weight: normal;padding-top: 88px;}
 .title-style1.tap{padding-top:60px;}
 .title-style2{font-family: 'NotoKrM'; font-size: 40px; color: #000;font-weight: normal; margin-bottom: 30px;text-align: center; }
 .title-style3{font-family: 'NotoKrM'; font-size: 18px; color: #000;font-weight: normal; }
@@ -342,14 +342,14 @@ input[readonly]{border: 1px solid #eee !important; color: #777 !important; backg
 .info-box > div{border: 3px solid #0770bb; width: 580px; height: 230px; display: inline-block; font-size: 16px; vertical-align: top; color: #777777; line-height: 25px; border-radius: 30px; position: relative;}
 .info-box > div.mint{border: 2px solid #199da3}
 .info-box > div:first-child{margin-right: 16px;}
-.info-box .title{color:#0770bb; font-size: 26px; font-family:'NotoKrM',sans-serif; font-weight: normal; position: absolute; top: 50%; left: 50px; transform: translateY(-50%)  ; }
+.info-box .title{color:#0770bb; font-size: 26px; font-family:'NotoKrM',sans-serif; font-weight: normal; position: absolute; top: 50%; left: 50px; transform: translateY(-50%)  ;-webkit-transform: translateY(-50%)  ; }
 .info-box .mint .title{ color:#199da3}
-.info-box .text{position: absolute; top: 50%; left: 200px; transform: translateY(-50%) }
+.info-box .text{position: absolute; top: 50%; left: 200px; transform: translateY(-50%);-webkit-transform: translateY(-50%)  }
 
 .info-box.type2 > div{height: 245px; }
 .info-box.type2 .text2{color: #333333; font-size: 20px; font-family:'NotoKrM',sans-serif; font-weight: normal; padding-left: 40px; padding-top: 45px;}
-.info-box.type2 .title{position: relative; top: 0; left: 0px; transform:none; padding-left: 40px; margin:11px 0 26px  }
-.info-box.type2 .text{ padding-left: 40px;position: relative; top: 0; left: 0; transform:none; font-size: 14px;  }
+.info-box.type2 .title{position: relative; top: 0; left: 0px; transform:none; -webkit-transform:none;padding-left: 40px; margin:11px 0 26px  }
+.info-box.type2 .text{ padding-left: 40px;position: relative; top: 0; left: 0; transform:none;-webkit-transform:none; font-size: 14px;  }
 
 
 /* contact */
